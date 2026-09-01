@@ -1,4 +1,4 @@
-nome = input("DIGITE NOME DO ALUNO: ")
+nome = input("WRITE YOUR NAME: ")
 
 note_1 = int(input("DIGITE PRIMEIRA NOTA: "))
 note_2 = int(input("DIGITE SEGUNDA NOTA: "))
