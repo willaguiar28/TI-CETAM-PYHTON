@@ -1,8 +1,7 @@
 salario_atual = float(input("DIGITE O SALÁRIO ATUAL: "))
-salario_reajuste = float(input("DIGITE O VALOR DO REAJUSTE: "))
+percentual_reajuste = float(input("DIGITE O PERCENTUAL DE REAJUSTE (%): "))
 
+valor_reajuste = salario_atual * (percentual_reajuste / 100)
+novo_salario = salario_atual + valor_reajuste
 
-salario_reajuste = salario_atual / 100
-novo_salario = (salario_atual * salario_reajuste) / 100
-
-print("O NOVO SALÁRIO SERÁ DE: R$", novo_salario)
+print("SEU NOVO SALÁRIO SERÁ DE: ", novo_salario)
