@@ -18,7 +18,7 @@ for quantidade in range(operacao):
         for quantidade in range(cadastro_livro):
             print("=" * 10 + f" LIVRO #{quantidade + 1} " + "=" * 10)
 
-            codigo_livro = int(input("Informe o código: "))
+            codigo_livro = input("Informe o código: ")
             titulo_livro = input("Informe o título: ")
             autor_livro = input("Informe o autor: ")
             ano_livro = int(input("Informe o ano: "))
@@ -26,7 +26,7 @@ for quantidade in range(operacao):
 
             if titulo_livro == "" or autor_livro == "":
                 print("Opa! 'Título' e/ou 'Autor' não podem ficar em branco.")
-            elif ano_livro <= 0:
+            elif ano_livro < 1000 or ano_livro > 2026:
                 print("Opa! Informe um ano válido.")
             elif quantidade_livro <= 0:
                 print("Opa! Quantidade precisa ser maior que zero.")
@@ -39,9 +39,9 @@ for quantidade in range(operacao):
         for quantidade in range(cadastro_aluno):
             print("=" * 10 + f" ALUNO #{quantidade + 1} " + "=" * 10)
 
-            matricula_aluno = int(input("Informe a matrícula: "))
+            matricula_aluno = input("Informe a matrícula: ")
             nome_aluno = input("Informe o nome: ")
-            turma_aluno = input("Informe a Turma e/ou Curso: ")
+            turma_aluno = input("Informe a turma e/ou curso: ")
 
             if matricula_aluno == "":
                 print("Opa! A matrícula não foi preenchida corretamente.")
@@ -54,7 +54,7 @@ for quantidade in range(operacao):
         print("=" * 10 + " EMPRÉSTIMO DE LIVRO " + "=" * 10)
         codigo_emprest = input("Informe o código do livro: ")
         matricula_emprest = input("Informe a matrícula: ")
-        quantidade_emprest = int(input("Informe a quantidade: "))
+        quantidade_emprest = int(input("Informe a quantidade disponível: "))
 
         if codigo_emprest == "":
             print("Opa! Código inválido. Tente novamente.")
@@ -64,7 +64,7 @@ for quantidade in range(operacao):
             print("Empréstimo realizado com sucesso!")
         else:
             print("Não foi possível realizar o empréstimo.")
-            print("Não há exemplares disponíves. Tente novamente mais tarde.")
+            print("Não há exemplares disponíveis. Tente novamente mais tarde.")
 
     elif opcao_entrada == "4":
         print("Sessão encerrada com sucesso!")
