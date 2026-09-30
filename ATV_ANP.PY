@@ -16,8 +16,10 @@ while True:
 
         titulo = input("Digite o título: ")
         autor = input("Digite o autor: ")
+        ano = int(input("Digite o ano: "))
+        quantidade = int(input("Informe quantidade: "))
 
-        livros.append([titulo, autor])
+        livros.append([titulo, autor, ano, quantidade])
 
         print("Livro cadastrado!")
 
