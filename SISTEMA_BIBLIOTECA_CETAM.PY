@@ -66,9 +66,11 @@ def listar_livros():
         print("Nenhum livro cadastrado.")
         return
     for livro in livros:
-        print(f"Código: {livro['codigo']} | Título: {livro['titulo']} | "
-              f"Autor: {livro['autor']} | Ano: {livro['ano']} | "
-              f"Disponíveis: {livro['quantidade']}")
+        print("Código:", livro['codigo'],
+          "Título:", livro['titulo'],
+          "Autor:", livro['autor'],
+          "Ano:", livro['ano'],
+          "Disponíveis:", livro['quantidade'])
 
 
 print(" === SISTEMA DE BIBLIOTECA CETAM === ")
